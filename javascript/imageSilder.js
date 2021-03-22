@@ -1,6 +1,6 @@
-const gridimageThree = document.querySelector('.itemThree');
-const gridimageFive = document.querySelector('.itemFive');
-const gridimageSeven = document.querySelector('.itemSeven');
+const gridimageThree = document.querySelector('.grid-three');
+const gridimageFive = document.querySelector('.grid-five');
+const gridimageSeven = document.querySelector('.grid-seven');
 const gridNavButtons = document.querySelectorAll('.grid-navButton');
 
 
