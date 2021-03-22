@@ -104,7 +104,7 @@ img {
   width: 100%;
   max-width: 63rem;
   height: 60%;
-  border: 2.5px solid #9615DB;
+  border: 5px solid #9615DB;
 }
 
 .white-outside-border .hero .textContainer .hero-article .hero-subHeading {
@@ -165,6 +165,189 @@ img {
 .white-outside-border .hero .header-btnContainer .hero-btn:hover {
   cursor: pointer;
   background-color: #2D3032;
+}
+
+/*tablet screen-size*/
+@media only screen and (max-width: 1050px) {
+  .white-outside-border .hero {
+    width: 100%;
+    max-width: 200rem;
+    height: 45rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(../Image/LandingPage-Photos/marmor.jpg);
+  }
+  .white-outside-border .hero .textContainer .hero-article .hero-subHeading {
+    color: #C18FFF;
+    letter-spacing: 0.8rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 11%;
+  }
+  .white-outside-border .hero .textContainer .hero-article h1 {
+    font-size: 4rem;
+    -webkit-transform: translateX(-3rem);
+            transform: translateX(-3rem);
+  }
+  .white-outside-border .hero .textContainer .hero-borderHeading {
+    background-color: #4a4f50;
+    /*importent: this removes broder*/
+    padding: 0 1.5rem;
+    color: #C18FFF;
+    letter-spacing: 0.8rem;
+    position: absolute;
+    bottom: 5.2rem;
+    right: 14%;
+  }
+  .white-outside-border .hero .header-btnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 95%;
+    max-width: 63rem;
+    height: 8rem;
+  }
+}
+
+/*screen-size*/
+@media only screen and (max-width: 600px) {
+  .white-outside-border .hero {
+    width: 100%;
+    max-width: 200rem;
+    height: 42rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(../Image/LandingPage-Photos/marmor.jpg);
+  }
+  .white-outside-border .hero .textContainer .hero-article {
+    max-width: 42rem;
+    height: 50%;
+  }
+  .white-outside-border .hero .textContainer .hero-article .hero-subHeading {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .white-outside-border .hero .textContainer .hero-article h1 {
+    font-size: 3.5rem;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+  .white-outside-border .hero .textContainer .hero-borderHeading {
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 6.8rem;
+    right: auto;
+  }
+  .white-outside-border .hero .header-btnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 95%;
+    max-width: 63rem;
+    height: 8rem;
+  }
+  .white-outside-border .hero .header-btnContainer .hero-btn {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 487px) {
+  .white-outside-border .hero {
+    width: 100%;
+    max-width: 200rem;
+    height: 38rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(../Image/LandingPage-Photos/marmor.jpg);
+  }
+  .white-outside-border .hero .textContainer {
+    height: 25rem;
+  }
+  .white-outside-border .hero .textContainer .hero-article {
+    max-width: 42rem;
+    height: 50%;
+  }
+  .white-outside-border .hero .textContainer .hero-article .hero-subHeading {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .white-outside-border .hero .textContainer .hero-article h1 {
+    font-size: 2.8rem;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+  .white-outside-border .hero .textContainer .hero-borderHeading {
+    letter-spacing: 0.3rem;
+    position: absolute;
+    bottom: 5.5rem;
+  }
+  .white-outside-border .hero .header-btnContainer .hero-btn {
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .gridContainer {
@@ -238,5 +421,169 @@ img {
   max-width: inherit;
   height: 100%;
   max-height: inherit;
+}
+
+/*tablet screen-size*/
+@media only screen and (max-width: 1050px) {
+  .gridContainer {
+    width: 100%;
+    max-width: 210rem;
+    height: 100%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    padding: 1.5rem 0;
+    row-gap: 0.8%;
+    -webkit-column-gap: 1%;
+            column-gap: 1%;
+    /*hide items when smaller screen size*/
+  }
+  .gridContainer .grid-one,
+  .gridContainer .grid-six,
+  .gridContainer .grid-nine {
+    display: none;
+  }
+  .gridContainer .grid-two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .gridContainer .grid-three {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .gridContainer .grid-three img {
+    max-height: 20rem;
+  }
+  .gridContainer .grid-four {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .gridContainer .grid-five {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    grid-column: 2/-1;
+  }
+  .gridContainer .grid-five img {
+    max-height: 20rem;
+  }
+  .gridContainer .grid-eight {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .gridContainer .grid-seven {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .gridContainer .grid-seven img {
+    max-height: 20rem;
+  }
+  .gridContainer .grid-item {
+    position: relative;
+  }
+  .gridContainer .grid-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .gridContainer .grid-item .grid-navButton {
+    height: 50%;
+  }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 500px) {
+  .gridContainer {
+    width: 100%;
+    max-width: 210rem;
+    height: 100%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem 0;
+    row-gap: 0.8%;
+    -webkit-column-gap: 1%;
+            column-gap: 1%;
+    /*hide items when smaller screen size*/
+    /*change grid tamplate*/
+  }
+  .gridContainer .grid-one,
+  .gridContainer .grid-six,
+  .gridContainer .grid-nine {
+    display: none;
+  }
+  .gridContainer .grid-two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .gridContainer .grid-three {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .gridContainer .grid-four {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .gridContainer .grid-five {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .gridContainer .grid-eight {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .gridContainer .grid-seven {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .gridContainer .grid-item {
+    position: relative;
+  }
+  .gridContainer .grid-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .gridContainer .grid-item .grid-navButton {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

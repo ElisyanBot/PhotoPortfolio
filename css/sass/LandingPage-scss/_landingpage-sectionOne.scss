@@ -65,3 +65,154 @@
         }
     }
 }
+
+/*tablet screen-size*/
+@media only screen and (max-width: 1050px){
+
+    .gridContainer{
+        width: 100%;
+        max-width: 210rem;
+        height: 100%;
+        margin:auto;
+    
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       
+    
+        padding:1.5rem 0;
+        row-gap: 0.8%;
+        column-gap: 1%;
+        
+    
+        /*hide items when smaller screen size*/
+        .grid-one,
+        .grid-six,
+        .grid-nine{
+         display: none;
+        }
+
+        .grid-two{
+            order: 2;
+        }
+
+        .grid-three{
+            order: 1;
+            grid-column: 1/3;
+            
+           img{ max-height: 20rem;} 
+        }
+
+        .grid-four{
+            order: 3;
+        }
+
+
+        .grid-five{
+            order: 4;
+            grid-column: 2/-1;
+            
+            img{ max-height: 20rem;} 
+        }
+
+        .grid-eight{
+            order:6;
+        }
+        .grid-seven{
+            order: 5;
+            grid-column: 1/3;
+            
+            img{ max-height: 20rem;} 
+        }
+
+        .grid-item{
+            position: relative;
+          
+            img{
+                object-fit:cover;
+                margin: auto;
+                transition: all 1s ease-in-out;
+                
+            }
+
+            .grid-navButton{
+                height: 50%;
+            }
+    
+        }
+    }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 500px){
+
+    .gridContainer{
+        width: 100%;
+        max-width: 210rem;
+        height: 100%;
+        margin:auto;
+    
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+        padding:1rem 0;
+        row-gap: 0.8%;
+        column-gap: 1%;
+        
+    
+        /*hide items when smaller screen size*/
+        .grid-one,
+        .grid-six,
+        .grid-nine{
+         display: none;
+        }
+
+        /*change grid tamplate*/
+                .grid-two{
+                    order: 2;
+                }
+
+                .grid-three{
+                    order: 1;
+                    grid-column: 1/2;
+                }
+
+                .grid-four{
+                    order: 3;
+                }
+
+
+                .grid-five{
+                    order: 4;
+                    grid-column: 2/3;
+                }
+
+                .grid-eight{
+                    order:6;
+                }
+                .grid-seven{
+                    order: 5;
+                    grid-column: 1/2;
+                   
+                }
+
+        .grid-item{
+            position: relative;
+          
+            img{
+                object-fit: cover;
+                margin: auto;
+                transition: all 1s ease-in-out;
+                
+            }
+    
+            .grid-navButton{
+                height: 100%;
+            }
+    
+        }
+    }
+}

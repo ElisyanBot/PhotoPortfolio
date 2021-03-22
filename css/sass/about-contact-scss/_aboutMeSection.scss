@@ -1,0 +1,51 @@
+.aboutMe-section{
+    @include SectionSize(100vh);
+    @include flex(row, space-between, center);
+    .imgContainer{
+        background-color: gray;
+        width: 38%;
+        min-width: 30rem;
+        height: inherit;
+
+        img{
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .article-container{
+        @include flex(column, center, center);
+        width: 50%;
+        height: 85vh;
+        margin: auto;
+
+        border: 3.5px solid $Maincolor;
+
+        .aboutMe-article{
+        @include flex(column, space-evenly, center);
+        width: 70%;
+        height: 40%;
+        margin: auto;
+
+            p{
+                font-size: 1.6rem;
+            }
+        }
+
+        .article-nav{
+            width: 70%;
+            height: 20%;
+
+            border-top: 2.5px solid $Light-Maincolor;
+            .article-nav_list{
+                @include flex(row, space-evenly, center);
+                list-style: none;
+                height: 100%;
+
+                .article-nav_listItem a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
