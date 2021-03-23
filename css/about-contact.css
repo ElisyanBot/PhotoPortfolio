@@ -54,10 +54,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #e7e7e7;
 }
 
 .aboutMe-section .imgContainer {
-  background-color: gray;
   width: 38%;
   min-width: 30rem;
   height: inherit;
@@ -87,9 +87,32 @@ img {
   height: 85vh;
   margin: auto;
   border: 3.5px solid #9615DB;
+  /*changes the font in all of the articles*/
+  /*size of all of the articles*/
+  /*navigation section in the article-frame*/
 }
 
-.aboutMe-section .article-container .aboutMe-article {
+.aboutMe-section .article-container .article-header {
+  -webkit-transform: translateY(-1.8rem);
+          transform: translateY(-1.8rem);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #9615DB;
+  text-align: center;
+  /*hides article border*/
+  width: 100%;
+  max-width: 25rem;
+  background-color: #e7e7e7;
+}
+
+.aboutMe-section .article-container p {
+  font-size: 1.6rem;
+}
+
+.aboutMe-section .article-container .aboutMe-article,
+.aboutMe-section .article-container .work-article,
+.aboutMe-section .article-container .education-article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,19 +120,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
   height: 40%;
   margin: auto;
-}
-
-.aboutMe-section .article-container .aboutMe-article p {
-  font-size: 1.6rem;
 }
 
 .aboutMe-section .article-container .article-nav {
@@ -126,17 +145,26 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   height: 100%;
 }
 
+.aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
+  color: #B58200;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  padding: 0.4rem 3.5rem;
+}
+
 .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a:hover {
-  text-decoration: underline;
+  color: #9615DB;
 }
 /*# sourceMappingURL=about-contact.css.map */

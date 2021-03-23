@@ -1,8 +1,8 @@
 .aboutMe-section{
     @include SectionSize(100vh);
     @include flex(row, space-between, center);
+    background: rgb(231, 231, 231);
     .imgContainer{
-        background-color: gray;
         width: 38%;
         min-width: 30rem;
         height: inherit;
@@ -20,30 +20,64 @@
         margin: auto;
 
         border: 3.5px solid $Maincolor;
+        
 
-        .aboutMe-article{
-        @include flex(column, space-evenly, center);
-        width: 70%;
-        height: 40%;
-        margin: auto;
+        .article-header{
+            transform: translateY(-1.8rem);
+            font-size: 2.8rem;
 
-            p{
-                font-size: 1.6rem;
-            }
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            color: $Maincolor;
+
+            text-align: center;
+
+            /*hides article border*/
+            width: 100%;
+            max-width: 25rem;
+            background-color:rgb(231, 231, 231);
         }
 
+        /*changes the font in all of the articles*/
+        p{
+            font-size: 1.6rem;
+        }
+
+        /*size of all of the articles*/
+        .aboutMe-article,
+        .work-article,
+        .education-article{
+            @include flex(column, space-between, center);
+            width: 70%;
+            height: 40%;
+            margin: auto;
+        }
+
+        /*navigation section in the article-frame*/
         .article-nav{
             width: 70%;
             height: 20%;
 
             border-top: 2.5px solid $Light-Maincolor;
             .article-nav_list{
-                @include flex(row, space-evenly, center);
+                @include flex(row, space-around, center);
+                flex-wrap: wrap;
                 list-style: none;
                 height: 100%;
 
+               
+
+
+                .article-nav_listItem a{
+                    color:#B58200;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.2rem;
+                    font-weight: bold;
+
+                    padding: 0.4rem 3.5rem;
+                }
                 .article-nav_listItem a:hover{
-                    text-decoration: underline;
+                    color: $Maincolor;
                 }
             }
         }
