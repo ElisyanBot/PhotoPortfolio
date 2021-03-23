@@ -1,26 +1,46 @@
 /*
-Error: Undefined mixin 'flex'.
-        on line 4 of D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss, in `flex'
-        from line 4 of D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss
+Error: Undefined variable: "$dark-BackgroundColor-dim".
+        on line 11 of D:\fiverr_client\Surfers\photographer\last website updated images\PhotoPortfolio\css\portfolio\portfolio_main.scss
 
-1: 
-2: .portfolio_area{
-3: 	.portfolio_inner{
-4: 		 @include flex(row, center, center);
-5: 		 .portfolio_left{
 6: 		 	flex: 1;
-7: 		 }
-8: 		 .portfolio_right{
-9: 		 	flex: 1;
+7: 		 	position: relative;
+8: 		 	.left_portfolio_bg{
+9: 		 		height: calc(75% - 25px);
+10: 		 		width: 100%;
+11: 		 		background: $dark-BackgroundColor-dim;
+12: 		 	}
+13: 		 	.portfolio_content{
+14: 		 		border: 2px solid $Maincolor;
+15: 			    padding: 30px;
+16: 			    position: absolute;
 
 Backtrace:
-D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss:4:in `flex'
-D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+D:\fiverr_client\Surfers\photographer\last website updated images\PhotoPortfolio\css\portfolio\portfolio_main.scss:11
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -75,4 +95,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 4 of D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss, in `flex'\A         from line 4 of D:\fiverr_client\Surfers\photographer\website portfolio -fiver\css\portfolio\portfolio_main.scss\A \A 1: \A 2: .portfolio_area{\A 3: 	.portfolio_inner{\A 4: 		 @include flex(row, center, center);\A 5: 		 .portfolio_left{\A 6: 		 	flex: 1;\A 7: 		 }\A 8: 		 .portfolio_right{\A 9: 		 	flex: 1;"; }
+  content: "Error: Undefined variable: \"$dark-BackgroundColor-dim\".\A         on line 11 of D:\fiverr_client\Surfers\photographer\last website updated images\PhotoPortfolio\css\portfolio\portfolio_main.scss\A \A 6: 		 	flex: 1;\A 7: 		 	position: relative;\A 8: 		 	.left_portfolio_bg{\A 9: 		 		height: calc(75% - 25px);\A 10: 		 		width: 100%;\A 11: 		 		background: $dark-BackgroundColor-dim;\A 12: 		 	}\A 13: 		 	.portfolio_content{\A 14: 		 		border: 2px solid $Maincolor;\A 15: 			    padding: 30px;\A 16: 			    position: absolute;"; }

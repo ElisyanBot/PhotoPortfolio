@@ -1,6 +1,6 @@
 
 footer{
-	background: $Maincolor;
+	background: $footer-bg;
 	padding:30px 80px;
 	@include flex(row, left, left);
 	a{
@@ -31,6 +31,9 @@ footer{
 		li{
 			padding: 0px 12px;
 			display: inline-block;
+			&:last-child{
+				padding-right: 0px;
+			}
 		}
 	}
 }

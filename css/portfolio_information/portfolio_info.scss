@@ -1,8 +1,10 @@
 /*global*/
 @import '../sass/global';
-@import '_portfolio_main.scss';
+@import '_info_one';
+@import '_info_one';
+@import '_info_one';
+@import '_info_main_portfolio';
 @import '../footer/footer';
-
 
 
 html{
@@ -11,6 +13,7 @@ html{
 
 body{
 	background: $light-BackgroundColor;
+    overflow-x: hidden;
 }
 
 p{
