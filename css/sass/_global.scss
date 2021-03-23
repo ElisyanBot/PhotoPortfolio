@@ -48,6 +48,17 @@ $light-TextColor:#ffffff;
 $footer-bg:#530080;
 
 
+/*basic focus*/
+:focus{
+    outline: 2px solid $Maincolor;
+}
+
+a:focus{
+    outline: none;
+    text-decoration: underline;
+}
+
+
 /*mixins*/
 @mixin SectionSize ($height){
     width: 100%;

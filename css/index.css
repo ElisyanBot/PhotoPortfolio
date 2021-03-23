@@ -34,6 +34,16 @@ img {
 }
 
 /*colors*/
+/*basic focus*/
+:focus {
+  outline: 2px solid #9615DB;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
 /*mixins*/
 /*sections*/
 .white-outside-border {
