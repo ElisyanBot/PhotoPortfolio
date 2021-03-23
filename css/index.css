@@ -34,16 +34,6 @@ img {
 }
 
 /*colors*/
-/*basic focus*/
-:focus {
-  outline: 2px solid #9615DB;
-}
-
-a:focus {
-  outline: none;
-  text-decoration: underline;
-}
-
 /*mixins*/
 /*sections*/
 .white-outside-border {
@@ -387,8 +377,8 @@ a:focus {
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out 1s;
+  transition: all 1s ease-in-out 1s;
 }
 
 .gridContainer .grid-item .FilterImage {
@@ -595,5 +585,65 @@ a:focus {
   .gridContainer .grid-item .grid-navButton {
     height: 100%;
   }
+}
+
+/*footer*/
+footer {
+  background: #530080;
+  padding: 30px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+footer a {
+  color: #ffffff;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+footer a::before {
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  content: "";
+  left: 100%;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover::before {
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer ul {
+  margin-left: auto;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 0px 12px;
+  display: inline-block;
+}
+
+footer ul li:last-child {
+  padding-right: 0px;
 }
 /*# sourceMappingURL=index.css.map */
