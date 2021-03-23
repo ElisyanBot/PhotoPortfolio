@@ -34,6 +34,14 @@ img {
 }
 
 /*colors*/
+:focus {
+  outline: 2.5px solid #9615DB;
+}
+
+a:focus {
+  outline: none;
+}
+
 /*mixins*/
 .portfolio_area {
   background: url(../../Image/porfolioPhotos/Background.webp);

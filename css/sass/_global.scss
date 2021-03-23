@@ -47,8 +47,19 @@ $dark-BackgroundColor-dim-navBtn: #2d3032a2;
 
 $dark-TextColor:#2D3032;
 $light-TextColor:#ffffff;
+$extra-TextColor:#B58200;
 
 $footer-bg:#530080;
+
+
+:focus {
+    outline: 2.5px solid $Maincolor;
+}
+
+a:focus {
+    outline: none;
+}
+
 
 /*mixins*/
 @mixin SectionSize ($height){

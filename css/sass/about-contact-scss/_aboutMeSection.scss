@@ -1,27 +1,31 @@
 .aboutMe-section{
-    @include SectionSize(100vh);
+    @include SectionSize(90rem);
     @include flex(row, space-between, center);
-    background: rgb(231, 231, 231);
+    background: rgb(231, 231, 231) url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
     .imgContainer{
         width: 38%;
         min-width: 30rem;
-        height: inherit;
+        max-height: inherit;
 
         img{
-            min-height: 100%;
+            height: 90rem;
             object-fit: cover;
+            box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.897);
         }
     }
 
+    /*about me article container*/
     .article-container{
         @include flex(column, center, center);
         width: 50%;
-        height: 85vh;
+        height: 85% ;
         margin: auto;
 
-        border: 3.5px solid $Maincolor;
+        border: 4px solid $Maincolor;
+        
         
 
+        /*header for artical*/
         .article-header{
             transform: translateY(-1.8rem);
             font-size: 2.8rem;
@@ -34,13 +38,13 @@
 
             /*hides article border*/
             width: 100%;
-            max-width: 25rem;
-            background-color:rgb(231, 231, 231);
+            max-width: 30rem;
+            background:rgb(231, 231, 231) url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
         }
 
         /*changes the font in all of the articles*/
         p{
-            font-size: 1.6rem;
+            font-size: 2rem;        
         }
 
         /*size of all of the articles*/
@@ -58,7 +62,8 @@
             width: 70%;
             height: 20%;
 
-            border-top: 2.5px solid $Light-Maincolor;
+            border-top: 3px solid $Light-Maincolor;
+
             .article-nav_list{
                 @include flex(row, space-around, center);
                 flex-wrap: wrap;
@@ -70,7 +75,7 @@
 
                 .article-nav_listItem a{
                     color:#B58200;
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     letter-spacing: 0.2rem;
                     font-weight: bold;
 

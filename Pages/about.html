@@ -66,17 +66,70 @@
             </div>
         </section>
     <!-- contact section -->
+    <section id="contactSection">
+     <!-- socilmedia infromation/sub section -->
+        <div class="socialmediaContainer">
+            <!-- social media list-->
+            <ul class="mediaLinks">
+                <li class="mediaLinks-Item">
+                    <i>test</i>
+                </li>
+                <li class="mediaLinks-Item">
+                    <i>test</i>
+                </li>
+                <li class="mediaLinks-Item">
+                    <i>test</i>
+                </li>
+            </ul>
+            <!-- socialmedia descrition list-->
+            <ul class="mediaDescription">
+                <li class="mediaDescrition-item">
+                    <p class="descrition">
+                        It has survived not only five centuries, 
+                        but also the leap into electronic 
+                    </p>
+                </li>
+                <li class="mediaDescrition-item">
+                    <p class="descrition">
+                        It has survived not only  typesetting, 
+                        remaining essentially unchanged
+                    </p>
+                </li>
+                <li class="mediaDescrition-item">
+                    <p class="descrition">
+                        It has survived not only five centuries, 
+                        but also the leap 
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- contact form sub-section-->
+        <form action="post" class="contactForm">
+            <!--name input-->
+            <label for="FullName">Name</label>
+            <input type="text" id="FullName">
+            <!--email inpit-->
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required>
+            <!--massage input-->
+            <label for="Message">Message</label>
+            <textarea name="massage" id="Message" cols="30" rows="10" maxlength="600" required></textarea>
+            <!-- button -->
+            <button type="submit"><i class="fas"></i> Send</button>
+        </form>
+
+    </section>
 
 
     <!-- footer section -->
     <footer>
 		<div class="back_btn">
-			<a href="#">back</a>
+			<a href="../Index.html">Home</a>
 		</div>
 		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">about me</a></li>
-			<li><a href="#">contact me</a></li>
+			<li><a href="./portfolio.html">Projeckts</a></li>
+            <li><a href="#">Scroll Up</a></li>
 		</ul>
 	</footer>
     <script src="../javascript/articlePageChange.js"></script>

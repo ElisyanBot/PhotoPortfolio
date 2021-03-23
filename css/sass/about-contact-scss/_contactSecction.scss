@@ -1,0 +1,88 @@
+#contactSection{
+    @include SectionSize(90rem);
+    @include flex(row, space-around, center);
+    
+    background: rgb(0, 0, 0) url(../Image/AboutMe-Photo/BackgroundTextureDark.png);
+    .socialmediaContainer{
+        @include flex(row, center, center);
+        height: 60%;
+        width: 40%;
+        
+        ul{
+            list-style: none;
+        }
+
+        .mediaLinks{
+        @include flex(column, flex-start, center);
+
+        width: 100%;
+        max-width: 20rem;
+        }
+
+        .mediaDescription{
+            @include flex(column, flex-start, center);
+            width: 100%;
+            max-width: 20rem;
+        }
+
+    }
+
+    /*contact form styling*/
+    .contactForm{
+        @include flex(column, center, space-around);
+        height: 90%;
+        width: 42%;
+
+        input{
+            width:100%;
+            max-width: 60rem;
+            height: 5rem;
+
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        label{
+            font-size: 2rem;
+            font-weight: bold;
+            color: $extra-TextColor;
+            margin: 0.5rem 0;
+
+
+        }
+
+        #Message{
+            width:100%;
+            max-width: 60rem;
+            height: 40rem;
+
+            font-size: 2rem;
+        }
+
+        button[type="submit"]{
+            background: none;
+            border: none;
+            width: 100%;
+            max-width: 58rem;
+
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $Maincolor;
+
+            text-align: end;
+
+            margin-top: 2rem;
+
+        }
+
+        button[type="submit"]:focus{
+            outline: none;
+            text-decoration: underline;
+        }
+
+        button[type="submit"]:hover{
+            outline: none;
+            color:$extra-TextColor;
+        }
+    }  
+}
