@@ -1,0 +1,163 @@
+@media only screen and (max-width: 1500px) {
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
+		width: 250px;
+		height: 250px;
+	}
+}
+@media only screen and (max-width: 1300px){
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
+		width: 220px;
+		height: 220px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	
+	.portfolio_area .portfolio_inner .portfolio_right{
+		flex: 1.2;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
+		height: 85%;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
+	    height: calc(75% - 60px);
+	}
+}
+
+
+@media only screen and (max-width: 991px){
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
+		width: 280px;
+		padding: 20px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top {
+	    padding-right: 40px;
+	    top: 60px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom {
+	    text-align: right;
+	    padding: 0px 20px 20px 40px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top h3{
+		font-size: 3rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right {
+	    flex: 1;
+	    width: 60%;
+	    padding: 30px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css {
+	    width: 190px;
+	    height: 200px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area{
+		flex-direction: column;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css {
+	    width: 200px;
+	    height: 200px;
+	    margin:6px 0px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right {
+	    flex: 0.4;
+	    width: auto;
+	    padding: 20px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
+	    height: 50%;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
+	    width: 280px;
+	    padding: 20px;
+	    max-height: 80vh;
+	    top: 60px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.portfolio_area .portfolio_inner {
+	    display: block;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top{
+		position: relative;
+		padding-top: 20px;
+		top: 0px;
+		margin-bottom: 60px;
+		padding-right: 100px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom {
+	    text-align: right;
+	    padding: 0px 20px 20px 40px;
+	    position: relative;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
+	   	width: 100%;
+	    padding: 20px;
+	    max-height: max-content;
+	    height: auto;
+	    top: 0px;
+	    position: relative;
+	    display: block;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
+	    height: 250px;
+	    top: 0px;
+	    left: 0px;
+	    position: absolute;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom {
+	    text-align: right;
+	    padding: 30px 0px 0px 100px;
+	    position: relative;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left{
+		padding:30px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right{
+		margin-top: 80px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
+		height: 300px;
+		width: 300px;
+	}
+	footer{
+		padding: 20px;
+	}
+	a{
+		font-size: 1.2rem;
+	}
+}
+
+	@media only screen and (max-width: 380px) {
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top {
+		padding-top: 10px;
+	    padding-right: 30px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css {
+	    height: 100%;
+	    width: 100%;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right {
+	    margin-top: 50px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom{
+		padding-left: 50px;
+	}
+	footer {
+	    display: block;
+	    text-align: center;
+	}
+	footer ul li {
+	    padding: 0px 6px;
+	    display: inline-block;
+	}
+	a{
+		letter-spacing: 1px;
+	}
+}

@@ -1,0 +1,112 @@
+
+.portfolio_area{
+	.portfolio_inner{
+		 display: flex;
+		 .portfolio_left{
+		 	flex: 1;
+		 	position: relative;
+		 	.left_portfolio_bg{
+		 		height: calc(75% - 25px);
+		 		width: 100%;
+		 		background: $dark-BackgroundColor-dim;
+		 	}
+		 	.portfolio_content{
+		 		border: 2px solid $Maincolor;
+			    padding: 30px;
+			    position: absolute;
+			    left: 50%;
+			    bottom: 40px;
+			    transform: translate(-50%, 0px);
+			    width: 350px;
+			    height: 80%;
+		 		.content_top{
+		 			padding-right: 120px;
+		 			position: absolute;
+		 			top: 80px; 
+		 			h3{
+		 				font-size: 4rem;
+		 				color: $light-BackgroundColor;
+		 				text-transform: uppercase;
+		 				margin-bottom: 20px;
+		 			}
+		 			p{
+		 				color: $light-BackgroundColor;
+		 				span{
+		 					color: $Maincolor;
+		 				}
+		 			}
+		 		}
+		 		.content_bottom{
+		 			text-align: right;
+		 			padding: 0px 30px 30px 100px;
+		 			position: absolute;
+		 			bottom: 0;
+		 		}
+		 	}
+		 }
+		 .portfolio_right{
+		 	flex: 1.3;
+		 	width: 70%;
+		 	padding: 30px 60px;
+		 	.portfolio_right_area{
+		 		@include flex(row, center, center);
+		 		.single_img{
+		 			margin-right: 12px;
+		 		}
+		 		.double_img{
+		 			@include flex(column, center, center);
+		 			.double_img_area{
+		 				margin: 6px 0px;
+		 			}
+		 		}
+		 		.img_css{
+		 			width: 300px;
+		 			height: 300px;
+		 			position: relative;
+		 			overflow: hidden;
+		 			&::before {
+						position: absolute;
+						top: 0;
+						left: -75%;
+						z-index: 2;
+						display: block;
+						content: '';
+						width: 50%;
+						height: 100%;
+						background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+						background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+						-webkit-transform: skewX(-25deg);
+						transform: skewX(-25deg);
+					}
+					&:hover::before {
+						-webkit-animation: shine .75s;
+						animation: shine .75s;
+					}
+					@-webkit-keyframes shine {
+						100% {
+							left: 125%;
+						}
+					}
+					@keyframes shine {
+						100% {
+							left: 125%;
+						}
+					}
+		 			img{
+		 				-webkit-transform: rotate(10deg) scale(1.3);
+						transform: rotate(10deg) scale(1.3);
+						-webkit-transition: .3s ease-in-out;
+						transition: .3s ease-in-out;
+		 				width: 100%;
+		 				height: 100%;
+		 				object-fit: cover;
+		 			}
+		 			&:hover img{
+						-webkit-transform: rotate(0) scale(1);
+							transform: rotate(0) scale(1);
+		 			}
+		 		}
+		 	}
+		 }
+	}
+}
