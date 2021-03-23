@@ -32,9 +32,6 @@ img {
     display: block;
 }
 
-
-
-
 /*colors*/
 $Maincolor: #9615DB;
 $Light-Maincolor: #C18FFF;
@@ -47,6 +44,17 @@ $dark-BackgroundColor-dim-navBtn: #2d3032a2;
 
 $dark-TextColor:#2D3032;
 $light-TextColor:#ffffff;
+
+
+/*basic focus*/
+:focus{
+    outline: 2px solid $Maincolor;
+}
+
+a:focus{
+    outline: none;
+    text-decoration: underline;
+}
 
 
 
