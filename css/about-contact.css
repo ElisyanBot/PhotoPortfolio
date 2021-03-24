@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   /*1 rem = 10px*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -138,7 +139,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 65%;
   height: 40%;
   margin: auto;
 }
@@ -180,6 +181,11 @@ a:focus {
   color: #9615DB;
 }
 
+.aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a:focus {
+  outline: 0;
+  color: #9615DB;
+}
+
 #contactSection {
   width: 100%;
   max-width: 200rem;
@@ -198,6 +204,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background: black url(../Image/AboutMe-Photo/BackgroundTextureDark.png);
+  /*container for socialmedia icones and description*/
   /*contact form styling*/
 }
 
@@ -212,9 +219,9 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
   height: 60%;
   width: 40%;
 }
@@ -231,14 +238,40 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 20rem;
+  max-width: 15rem;
+}
+
+#contactSection .socialmediaContainer .mediaLinks .mediaLinks-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6rem;
+  height: 6rem;
+}
+
+#contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab {
+  font-size: 9rem;
+  color: #9615DB;
+}
+
+#contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab:hover {
+  color: #B58200;
 }
 
 #contactSection .socialmediaContainer .mediaDescription {
@@ -249,14 +282,19 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
+}
+
+#contactSection .socialmediaContainer .mediaDescription .descrition {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 #contactSection .contactForm {
@@ -274,15 +312,37 @@ a:focus {
       -ms-flex-align: space-around;
           align-items: space-around;
   height: 90%;
-  width: 42%;
+  width: 35%;
+  margin: auto;
+  /*--- !importent!---*/
+  /*textarea height styling*/
+  /*--- !importent!---*/
+  /*lable styling*/
+  /*button styling*/
 }
 
-#contactSection .contactForm input {
+#contactSection .contactForm input,
+#contactSection .contactForm #Message {
   width: 100%;
   max-width: 60rem;
   height: 5rem;
   font-size: 2rem;
   margin: 1rem 0;
+  /*helps people see if the requierd */
+}
+
+#contactSection .contactForm input:required:invalid:focus,
+#contactSection .contactForm #Message:required:invalid:focus {
+  outline: 3px solid red;
+}
+
+#contactSection .contactForm input:required:valid:focus,
+#contactSection .contactForm #Message:required:valid:focus {
+  outline: 3px solid #9615DB;
+}
+
+#contactSection .contactForm #Message {
+  height: 40rem;
 }
 
 #contactSection .contactForm label {
@@ -290,13 +350,12 @@ a:focus {
   font-weight: bold;
   color: #B58200;
   margin: 0.5rem 0;
+  /*make every lable with data-requierd attr have a * subil after it*/
 }
 
-#contactSection .contactForm #Message {
-  width: 100%;
-  max-width: 60rem;
-  height: 40rem;
-  font-size: 2rem;
+#contactSection .contactForm label[data-requierd]::after {
+  content: " *";
+  color: #C18FFF;
 }
 
 #contactSection .contactForm button[type="submit"] {
@@ -311,12 +370,17 @@ a:focus {
   margin-top: 2rem;
 }
 
-#contactSection .contactForm button[type="submit"]:focus {
+#contactSection .contactForm button[type="submit"] .fas {
+  margin-right: 1rem;
+  color: #9615DB;
+}
+
+#contactSection .contactForm button[type="submit"][type="submit"]:focus {
   outline: none;
   text-decoration: underline;
 }
 
-#contactSection .contactForm button[type="submit"]:hover {
+#contactSection .contactForm button[type="submit"][type="submit"]:hover {
   outline: none;
   color: #B58200;
 }
@@ -338,6 +402,7 @@ footer {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  font-size: 2rem;
 }
 
 footer a {

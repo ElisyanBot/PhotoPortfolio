@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   /*1 rem = 10px*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -201,6 +202,7 @@ footer {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  font-size: 2rem;
 }
 
 footer a {

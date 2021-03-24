@@ -3,6 +3,7 @@ footer{
 	background: $footer-bg;
 	padding:30px 80px;
 	@include flex(row, left, left);
+	font-size: 2rem;
 	a{
 		color: #ffffff;
 		padding-bottom: 5px;
