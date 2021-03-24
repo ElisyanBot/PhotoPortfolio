@@ -52,7 +52,7 @@
         .work-article,
         .education-article{
             @include flex(column, space-between, center);
-            width: 70%;
+            width: 65%;
             height: 40%;
             margin: auto;
         }
@@ -80,9 +80,15 @@
                     font-weight: bold;
 
                     padding: 0.4rem 3.5rem;
-                }
-                .article-nav_listItem a:hover{
-                    color: $Maincolor;
+
+                        &:hover{
+                            color: $Maincolor;
+                        }
+
+                        &:focus{
+                            outline: 0;
+                            color: $Maincolor;
+                        }
                 }
             }
         }

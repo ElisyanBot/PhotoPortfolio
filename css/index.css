@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   /*1 rem = 10px*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -125,7 +126,8 @@ a:focus {
 
 .white-outside-border .hero .textContainer .hero-article h1 {
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 4.8rem;
+  margin-top: 0.3rem;
 }
 
 .white-outside-border .hero .textContainer .hero-borderHeading {
@@ -167,6 +169,11 @@ a:focus {
   text-transform: uppercase;
 }
 
+.white-outside-border .hero .header-btnContainer .hero-btn:hover {
+  cursor: pointer;
+  background-color: #2D3032;
+}
+
 .white-outside-border .hero .header-btnContainer .hero-btn a {
   color: #C18FFF;
   font-size: 1.6rem;
@@ -177,11 +184,6 @@ a:focus {
 .white-outside-border .hero .header-btnContainer .hero-btn a:focus {
   outline: none;
   text-decoration: none;
-}
-
-.white-outside-border .hero .header-btnContainer .hero-btn:hover {
-  cursor: pointer;
-  background-color: #2D3032;
 }
 
 /*tablet screen-size*/
@@ -482,7 +484,8 @@ a:focus {
     grid-column: 1/3;
   }
   .gridContainer .grid-three img {
-    max-height: 20rem;
+    height: 100%;
+    width: 100%;
   }
   .gridContainer .grid-four {
     -webkit-box-ordinal-group: 4;
@@ -496,7 +499,8 @@ a:focus {
     grid-column: 2/-1;
   }
   .gridContainer .grid-five img {
-    max-height: 20rem;
+    height: 100%;
+    width: 100%;
   }
   .gridContainer .grid-eight {
     -webkit-box-ordinal-group: 7;
@@ -512,7 +516,8 @@ a:focus {
     grid-column: 1/3;
   }
   .gridContainer .grid-seven img {
-    max-height: 20rem;
+    height: 100%;
+    width: 100%;
   }
   .gridContainer .grid-item {
     position: relative;
@@ -625,6 +630,7 @@ footer {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  font-size: 2rem;
 }
 
 footer a {

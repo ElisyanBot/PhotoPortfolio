@@ -3,8 +3,9 @@
     @include flex(row, space-around, center);
     
     background: rgb(0, 0, 0) url(../Image/AboutMe-Photo/BackgroundTextureDark.png);
+    /*container for socialmedia icones and description*/
     .socialmediaContainer{
-        @include flex(row, center, center);
+        @include flex(row, center, space-around);
         height: 60%;
         width: 40%;
         
@@ -13,16 +14,37 @@
         }
 
         .mediaLinks{
-        @include flex(column, flex-start, center);
+        @include flex(column, space-around, center);
 
         width: 100%;
-        max-width: 20rem;
+        max-width: 15rem;
+
+            .mediaLinks-item{
+                @include flex(row, center, center);
+                width: 6rem;
+                height: 6rem;
+
+                .fab{
+                    font-size: 9rem;
+                    color: $Maincolor;
+
+                    &:hover{
+                        color: $extra-TextColor;
+                    }
+                }
+            }
         }
 
         .mediaDescription{
-            @include flex(column, flex-start, center);
+            @include flex(column, space-around, center);
             width: 100%;
-            max-width: 20rem;
+            max-width: 30rem;
+
+            .descrition{
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: $light-TextColor;
+            }
         }
 
     }
@@ -31,34 +53,56 @@
     .contactForm{
         @include flex(column, center, space-around);
         height: 90%;
-        width: 42%;
+        width: 35%;
+        margin: auto;
 
-        input{
+        input, 
+        #Message{
             width:100%;
             max-width: 60rem;
             height: 5rem;
 
             font-size: 2rem;
             margin: 1rem 0;
+
+            /*helps people see if the requierd */
+            &:required{
+
+                &:invalid:focus{
+                outline: 3px solid red;
+                }
+
+                &:valid:focus{
+                    outline: 3px solid $Maincolor;
+
+                }
+            }
         }
 
+        /*--- !importent!---*/
+            /*textarea height styling*/
+            #Message{
+                height: 40rem;
+            }
+        /*--- !importent!---*/
+
+
+        /*lable styling*/
         label{
             font-size: 2rem;
             font-weight: bold;
             color: $extra-TextColor;
             margin: 0.5rem 0;
 
-
+            /*make every lable with data-requierd attr have a * subil after it*/
+            &[data-requierd]::after{
+                content: " *";
+                color: $Light-Maincolor;
+            
+            } 
         }
-
-        #Message{
-            width:100%;
-            max-width: 60rem;
-            height: 40rem;
-
-            font-size: 2rem;
-        }
-
+        
+        /*button styling*/
         button[type="submit"]{
             background: none;
             border: none;
@@ -73,16 +117,22 @@
 
             margin-top: 2rem;
 
-        }
+                .fas{
+                    margin-right: 1rem;
+                    color: $Maincolor;
+                }
 
-        button[type="submit"]:focus{
-            outline: none;
-            text-decoration: underline;
-        }
+                &[type="submit"]:focus{
+                    outline: none;
+                    text-decoration: underline;
+                }
 
-        button[type="submit"]:hover{
-            outline: none;
-            color:$extra-TextColor;
+                &[type="submit"]:hover{
+                    outline: none;
+                    color:$extra-TextColor;
+                }
+
+
         }
     }  
 }

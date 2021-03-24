@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/about-contact.css">
     <title>About me</title>
+
+    <script src="https://kit.fontawesome.com/1c11390acb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -71,14 +72,14 @@
         <div class="socialmediaContainer">
             <!-- social media list-->
             <ul class="mediaLinks">
-                <li class="mediaLinks-Item">
-                    <i>test</i>
+                <li class="mediaLinks-item">
+                    <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
                 </li>
-                <li class="mediaLinks-Item">
-                    <i>test</i>
+                <li class="mediaLinks-item">
+                    <a href="#"><i class="fab fa-pinterest-square" aria-hidden="true"></i></a>
                 </li>
-                <li class="mediaLinks-Item">
-                    <i>test</i>
+                <li class="mediaLinks-item">
+                    <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                 </li>
             </ul>
             <!-- socialmedia descrition list-->
@@ -110,13 +111,13 @@
             <label for="FullName">Name</label>
             <input type="text" id="FullName">
             <!--email inpit-->
-            <label for="Email">Email</label>
+            <label for="Email"  data-requierd="required">Email</label>
             <input type="email" id="Email" required>
             <!--massage input-->
-            <label for="Message">Message</label>
+            <label for="Message"  data-requierd="required">Message</label>
             <textarea name="massage" id="Message" cols="30" rows="10" maxlength="600" required></textarea>
             <!-- button -->
-            <button type="submit"><i class="fas"></i> Send</button>
+            <button type="submit"><i class="fas fa-play"></i>Send</button>
         </form>
 
     </section>
