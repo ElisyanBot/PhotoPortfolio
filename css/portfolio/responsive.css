@@ -5,19 +5,21 @@
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
 		width: calc(100% - 200px);
-    	height: 72%;
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg{
 		height: calc(75% - 18px);
 	}
-	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top {
-		top: 20%;
-	}
 }
 @media only screen and (min-width: 1920px) {
 	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
-		width: calc(100% - 300px);
-    	height: 72%;
+		width: calc(100% - 250px);
+	}
+	.portfolio_area{
+		min-height: 100vh;
+		height: 100%;
+	}
+	.portfolio_area .portfolio_inner .portfolio_right{
+		padding: 50px 60px 50px 0px;
 	}
 }
 @media only screen and (min-height: 1080px) {
@@ -27,16 +29,36 @@
 		width: 100%;
 	}
 }
+@media only screen and (min-width: 1449px){
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top{
+		padding-right: 80px;
+	}
+}
+@media only screen and (min-width: 1501px) {
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top{
+		padding-right: 100px;
+	}
+}
+@media only screen and (min-width: 1701px){
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p{
+		font-size: 18px;
+		line-height: 25px;
+	}
+}
 @media only screen and (max-width: 1500px) {
 	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
-		width: 300px;
-		height: 300px;
+		width: 320px;
+		height: 330px;
 	}
 }
 @media only screen and (min-width: 1501px) and (max-width: 1699px) {
 	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
-		width: 350px;
-		height: 350px;
+		width: 360px;
+		height: 360px;
 	}
 }
 @media only screen and (min-height: 650px) and (max-height: 799px){
@@ -47,8 +69,17 @@
 }
 @media only screen and (max-width: 1300px){
 	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
-		width: 220px;
-		height: 220px;
+		width: 300px;
+		height: 300px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top{
+		top: 30px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p{
+		font-size: 12px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom{
+		padding-left: 60px;
 	}
 }
 @media only screen and (max-width: 1199px) {
@@ -57,15 +88,29 @@
 		flex: 1.2;
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
-		height: 85%;
+		height: 87%;
+		width: calc(100% - 80px);
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
-	    height: calc(75% - 60px);
+	    height: calc(75% - 20px);
+	}
+	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css{
+		width: 250px;
+		height: 250px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p{
+		font-size: 11px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom {
+	    padding-left: 40px;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom p{
+		font-size: 11px;
 	}
 }
 
 
-@media only screen and (max-width: 991px){
+/*@media only screen and (max-width: 1024px){
 	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content{
 		width: 280px;
 		padding: 20px;
@@ -93,12 +138,15 @@
 	    width: 190px;
 	    height: 200px;
 	}
-}
+}*/
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
 	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area{
 		flex-direction: column;
+	}
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
+		width: calc(100% - 120px);
 	}
 	.portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css {
 	    width: 200px;
@@ -111,17 +159,21 @@
 	    padding: 20px;
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
-	    height: 50%;
+	    height: calc(65% - 0px);
 	}
-	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
+/*	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
 	    width: 280px;
 	    padding: 20px;
 	    max-height: 80vh;
 	    top: 60px;
+	}*/
+}
+@media only screen and (max-width: 767px) {
+	.portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
+	    width: calc(100% - 40px);
 	}
 }
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 650px) {
 	.portfolio_area .portfolio_inner {
 	    display: block;
 	}
@@ -147,7 +199,7 @@
 	    display: block;
 	}
 	.portfolio_area .portfolio_inner .portfolio_left .left_portfolio_bg {
-	    height: 250px;
+	    height: 72%;
 	    top: 0px;
 	    left: 0px;
 	    position: absolute;

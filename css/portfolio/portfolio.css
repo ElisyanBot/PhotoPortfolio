@@ -43,34 +43,38 @@ img {
         background: #2d3032; }
       .portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
         border: 2px solid #9615DB;
-        padding: 30px;
+        padding: 25px;
         position: absolute;
         left: 50%;
-        bottom: 40px;
+        bottom: 30px;
         transform: translate(-50%, 0px);
-        width: calc(100% - 160px);
-        height: 80%; }
+        width: calc(100% - 120px);
+        height: 85%; }
         .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top {
-          padding-right: 120px;
+          padding-right: 50px;
           position: absolute;
-          top: 80px; }
+          top: 50px; }
           .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top h3 {
             font-size: 4rem;
             color: #ffffff;
             text-transform: uppercase;
-            margin-bottom: 20px; }
+            margin-bottom: 15px; }
           .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p {
-            color: #ffffff; }
+            color: #ffffff;
+            letter-spacing: 1.2px; }
             .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_top p span {
               color: #9615DB; }
         .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom {
           text-align: right;
-          padding: 0px 30px 30px 100px;
+          padding: 0px 30px 20px 90px;
           position: absolute;
           bottom: 0; }
+          .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom p {
+            font-size: 13px;
+            line-height: 18px; }
     .portfolio_area .portfolio_inner .portfolio_right {
       flex: 1.3;
-      padding: 30px 80px 30px 0px; }
+      padding: 30px 60px 30px 0px; }
       .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area {
         display: flex;
         flex-direction: row;
@@ -90,6 +94,32 @@ img {
           height: 300px;
           position: relative;
           overflow: hidden; }
+          .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css .hover_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .3s ease-in-out;
+            z-index: 5; }
+            .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css .hover_text p {
+              font-size: 16px;
+              color: #ffffff; }
+          .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: -50%;
+            background: rgba(0, 0, 0, 0);
+            z-index: 0;
+            transition: .3s ease-in-out; }
+          .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css:hover::after {
+            background: rgba(0, 0, 0, 0.3);
+            transition: .5s ease-in-out;
+            transition-delay: 0.2s;
+            top: 0%; }
           .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css::before {
             position: absolute;
             top: 0;
@@ -123,6 +153,10 @@ img {
           .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css:hover img {
             -webkit-transform: rotate(0) scale(1);
             transform: rotate(0) scale(1); }
+          .portfolio_area .portfolio_inner .portfolio_right .portfolio_right_area .img_css:hover .hover_text {
+            opacity: 1;
+            transition: .3s ease-in-out;
+            transition-delay: 0.2s; }
 
 footer {
   background: #530080;
@@ -166,8 +200,9 @@ body {
   background: #ffffff; }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  word-spacing: 1.2px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px; }

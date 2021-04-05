@@ -44,6 +44,18 @@
 		width: 900px;
 	}
 }
+@media only screen and (min-width: 1501px){
+	.portfolio_area .portfolio_inner .portfolio_left p{
+		font-size: 16px;
+    	line-height: 22px;
+	}
+}
+@media only screen and (min-width: 1701px){
+	.portfolio_area .portfolio_inner .portfolio_left p{
+		font-size: 18px;
+    	line-height: 25px;
+	}
+}
 
 @media only screen and (max-width: 991px){
 	.portfolio_area .portfolio_inner .portfolio_right{
