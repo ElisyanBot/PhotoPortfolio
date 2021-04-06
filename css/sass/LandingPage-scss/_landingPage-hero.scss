@@ -90,7 +90,7 @@
                     &:focus{
                     outline: none;
                     text-decoration: none;
-                     }
+                    }
                 }
 
             }
@@ -102,7 +102,8 @@
                 z-index: 5;
                 left: 50%;
                 transform: translate(-9rem, 12rem);
-                
+                display: none;
+            
                 width: 18rem;
                 height: 12rem; /*use this for animation/transition*/
 
@@ -233,6 +234,12 @@
                     letter-spacing: 0.2rem;
                     }
                 }
+
+                .dropDownMeny{
+                    transform: translate(-7.5rem, 12rem);     
+                    width: 15rem;
+                }
+    
     
             }
         }
