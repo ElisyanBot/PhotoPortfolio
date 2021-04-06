@@ -53,7 +53,7 @@
         .education-article{
             @include flex(column, space-between, center);
             width: 65%;
-            height: 40%;
+            height: 45%;
             margin: auto;
         }
 
@@ -70,16 +70,13 @@
                 list-style: none;
                 height: 100%;
 
-               
-
-
                 .article-nav_listItem a{
                     color:#B58200;
                     font-size: 1.6rem;
                     letter-spacing: 0.2rem;
                     font-weight: bold;
 
-                    padding: 0.4rem 3.5rem;
+                    padding: 0.4rem 0.1rem;
 
                         &:hover{
                             color: $Maincolor;
@@ -89,6 +86,159 @@
                             outline: 0;
                             color: $Maincolor;
                         }
+                }
+            }
+        }
+    }
+}
+
+
+/* ------------------- media rules --------------------- */
+
+/*small desktop/tablet size*/
+@media only screen and (max-width: 1050px){
+
+    .aboutMe-section{
+        @include SectionSize(90rem);
+        @include flex(column-reverse, space-between, center);
+        background: rgb(231, 231, 231) url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
+        
+        .imgContainer{
+        display: none;
+        }
+    
+        /*about me article container*/
+        .article-container{
+            @include flex(column, center, center);
+            width: 80%;        
+    
+            /*header for artical*/
+            .article-header{
+                font-size: 2.6rem;
+
+                /*hides article border*/
+                max-width: 25rem;
+            }
+    
+            /*changes the font in all of the articles*/
+            p{
+                font-size: 2rem;        
+            }
+    
+            /*navigation section in the article-frame*/
+            .article-nav{
+                .article-nav_list{
+                    .article-nav_listItem a{
+                        font-size: 1.6rem;
+
+                        padding: 0.4rem 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*mobile/tablet screen-size*/
+@media only screen and (max-width: 800px){
+
+    .aboutMe-section{
+        @include SectionSize(60rem);
+        /*about me article container*/
+        .article-container{ 
+    
+            /*header for artical*/
+            .article-header{
+                transform: translateY(-1.6rem);
+                font-size: 2.4rem;
+            }
+    
+            /*changes the font in all of the articles*/
+            p{
+                font-size: 1.4rem;        
+            }
+    
+            /*navigation section in the article-frame*/
+            .article-nav{
+                .article-nav_list{
+                    .article-nav_listItem a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 500px){
+
+    .aboutMe-section{
+        @include SectionSize(60rem);
+        /*about me article container*/
+        .article-container{ 
+            height: 76%;
+
+            /*header for artical*/
+            .article-header{
+                transform: translateY(-1.3rem);
+                font-size: 2rem;
+
+                /*hides article border*/
+                max-width: 18rem;
+            }
+    
+            /*changes the font in all of the articles*/
+            p{
+                font-size: 1.2rem;        
+            }
+
+            /*navigation section in the article-frame*/
+            .article-nav{
+                width: 65%;
+                height: 30%;
+                .article-nav_list{
+                    .article-nav_listItem a{
+                        font-size: 1.4rem;
+
+                        padding: 1rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*mobile screen-size*/
+@media only screen and (max-width: 350px){
+
+    .aboutMe-section{
+        /*about me article container*/
+        .article-container{ 
+
+            /*header for artical*/
+            .article-header{
+                /*hides article border*/
+                max-width: 14.5rem;
+            }
+    
+            /*changes the font in all of the articles*/
+            p{
+                font-size: 1rem;        
+            }
+
+            /*navigation section in the article-frame*/
+            .article-nav{
+                width: 65%;
+                height: 30%;
+                .article-nav_list{
+                    .article-nav_listItem a{
+                        font-size: 1.1rem;
+
+                        padding: 1rem 2rem;
+                    }
                 }
             }
         }

@@ -107,7 +107,7 @@
             background: none;
             border: none;
             width: 100%;
-            max-width: 58rem;
+            max-width: inherit;
 
             font-size: 2.5rem;
             font-weight: bold;
@@ -135,4 +135,158 @@
 
         }
     }  
+}
+
+/*small desktop/tablet size*/
+@media only screen and (max-width: 1050px){
+
+    #contactSection{
+        @include flex(column-reverse, space-around, center);
+        padding-top: 5rem;
+        /*container for socialmedia icones and description*/
+        .socialmediaContainer{
+            @include flex(row, center, space-around);
+            height: 60%;
+            width: 40%;
+    
+            .mediaLinks{
+            @include flex(row, space-around, space-around);
+            width: 100%;
+            max-width: 40rem;
+    
+                .mediaLinks-item{
+                    width: 2rem;
+                    height: 2rem;
+    
+                    .fab{
+                        font-size: 7rem;
+                    }
+                }
+            }
+    
+            .mediaDescription{
+                display: none;
+            }
+        }
+    
+        /*contact form styling*/
+        .contactForm{
+            height: 90%;
+            width: 50%;
+    
+            input, 
+            #Message{
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+    
+            /*--- !importent!---*/
+                /*textarea height styling*/
+                #Message{
+                    height: 30rem;
+                }
+            /*--- !importent!---*/
+    
+    
+            /*lable styling*/
+            label{
+                font-size: 2rem;
+                margin: 0.5rem 0;
+    
+            }
+            
+            /*button styling*/
+            button[type="submit"]{
+                font-size: 2.5rem;
+    
+                    .fas{
+                        margin-right: 1rem;
+                    }
+            }
+        }  
+    }
+
+}
+
+
+/*mobile/tablet screen-size*/
+@media only screen and (max-width: 900px){
+
+    #contactSection{
+        @include flex(column-reverse, space-around, center);
+        padding-top: 5rem;
+        /*container for socialmedia icones and description*/
+        .socialmediaContainer{
+            @include flex(row, center, space-around);
+            height: 60%;
+            width: 40%;
+    
+            .mediaLinks{
+               .mediaLinks-item{
+                    .fab{
+                        font-size: 6rem;
+                    }
+                }
+            }
+    
+            .mediaDescription{
+                display: none;
+            }
+        }
+    
+        /*contact form styling*/
+        .contactForm{
+            height: 90%;
+            width: 70%;
+    
+            input, 
+            #Message{
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+    
+            /*--- !importent!---*/
+                /*textarea height styling*/
+                #Message{
+                    height: 28rem;
+                }
+            /*--- !importent!---*/
+        }  
+    }
+
+
+}
+/*mobile screen-size*/
+@media only screen and (max-width: 700px){
+
+    #contactSection{
+        @include flex(column-reverse, space-around, center);
+        padding-top: 5rem;
+        /*container for socialmedia icones and description*/
+        .socialmediaContainer{
+            .mediaDescription{
+                display: none;
+            }
+        }
+    
+        /*contact form styling*/
+        .contactForm{
+            height: 90%;
+            width: 70%;
+    
+            input, 
+            #Message{
+                font-size: 1.6rem;
+                margin: 1rem 0;
+            }
+    
+            /*--- !importent!---*/
+                /*textarea height styling*/
+                #Message{
+                    height: 25rem;
+                }
+            /*--- !importent!---*/
+        }  
+    }
+
 }

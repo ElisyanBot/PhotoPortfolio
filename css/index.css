@@ -52,6 +52,7 @@ a:focus {
   margin: auto;
   background: #ffffff url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
   padding: 1.5%;
+  /*welcome text + hero article +  hero img*/
 }
 
 .white-outside-border .hero {
@@ -73,6 +74,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background: url(../Image/LandingPage-Photos/marmor.jpg);
+  /*button container + nav section*/
 }
 
 .white-outside-border .hero .textContainer {
@@ -155,9 +157,11 @@ a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
   width: 100%;
   max-width: 63rem;
   height: 8rem;
+  /*drop down meny landing page hero section*/
 }
 
 .white-outside-border .hero .header-btnContainer .hero-btn {
@@ -184,6 +188,59 @@ a:focus {
 .white-outside-border .hero .header-btnContainer .hero-btn a:focus {
   outline: none;
   text-decoration: none;
+}
+
+.white-outside-border .hero .header-btnContainer .dropDownMeny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: flex;
+      -ms-flex-align: flex;
+          align-items: flex;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  -webkit-transform: translate(-9rem, 12rem);
+          transform: translate(-9rem, 12rem);
+  width: 18rem;
+  height: 12rem;
+  /*use this for animation/transition*/
+  background: white;
+  overflow: hidden;
+  /*important for animation/transition*/
+}
+
+.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: inherit;
+  height: 4rem;
+  font-size: 1.4rem;
+}
+
+.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item:hover {
+  background: #2D3032;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /*tablet screen-size*/
@@ -400,8 +457,8 @@ a:focus {
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
-  -webkit-transition: all 1s ease-in-out 1s;
-  transition: all 1s ease-in-out 1s;
+  -webkit-transition: all 1s ease-in-out 0.5s;
+  transition: all 1s ease-in-out 0.5s;
 }
 
 .gridContainer .grid-item .FilterImage {
