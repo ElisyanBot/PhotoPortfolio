@@ -140,7 +140,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 65%;
-  height: 40%;
+  height: 45%;
   margin: auto;
 }
 
@@ -174,7 +174,7 @@ a:focus {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  padding: 0.4rem 3.5rem;
+  padding: 0.4rem 0.1rem;
 }
 
 .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a:hover {
@@ -184,6 +184,155 @@ a:focus {
 .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a:focus {
   outline: 0;
   color: #9615DB;
+}
+
+/* ------------------- media rules --------------------- */
+/*small desktop/tablet size*/
+@media only screen and (max-width: 1050px) {
+  .aboutMe-section {
+    width: 100%;
+    max-width: 200rem;
+    height: 90rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #e7e7e7 url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
+    /*about me article container*/
+  }
+  .aboutMe-section .imgContainer {
+    display: none;
+  }
+  .aboutMe-section .article-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    /*header for artical*/
+    /*changes the font in all of the articles*/
+    /*navigation section in the article-frame*/
+  }
+  .aboutMe-section .article-container .article-header {
+    font-size: 2.6rem;
+    /*hides article border*/
+    max-width: 25rem;
+  }
+  .aboutMe-section .article-container p {
+    font-size: 2rem;
+  }
+  .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
+    font-size: 1.6rem;
+    padding: 0.4rem 0.1rem;
+  }
+}
+
+/*mobile/tablet screen-size*/
+@media only screen and (max-width: 800px) {
+  .aboutMe-section {
+    width: 100%;
+    max-width: 200rem;
+    height: 60rem;
+    margin: auto;
+    /*about me article container*/
+  }
+  .aboutMe-section .article-container {
+    /*header for artical*/
+    /*changes the font in all of the articles*/
+    /*navigation section in the article-frame*/
+  }
+  .aboutMe-section .article-container .article-header {
+    -webkit-transform: translateY(-1.6rem);
+            transform: translateY(-1.6rem);
+    font-size: 2.4rem;
+  }
+  .aboutMe-section .article-container p {
+    font-size: 1.4rem;
+  }
+  .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
+    font-size: 1.4rem;
+  }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 500px) {
+  .aboutMe-section {
+    width: 100%;
+    max-width: 200rem;
+    height: 60rem;
+    margin: auto;
+    /*about me article container*/
+  }
+  .aboutMe-section .article-container {
+    height: 76%;
+    /*header for artical*/
+    /*changes the font in all of the articles*/
+    /*navigation section in the article-frame*/
+  }
+  .aboutMe-section .article-container .article-header {
+    -webkit-transform: translateY(-1.3rem);
+            transform: translateY(-1.3rem);
+    font-size: 2rem;
+    /*hides article border*/
+    max-width: 18rem;
+  }
+  .aboutMe-section .article-container p {
+    font-size: 1.2rem;
+  }
+  .aboutMe-section .article-container .article-nav {
+    width: 65%;
+    height: 30%;
+  }
+  .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+  }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 350px) {
+  .aboutMe-section {
+    /*about me article container*/
+  }
+  .aboutMe-section .article-container {
+    /*header for artical*/
+    /*changes the font in all of the articles*/
+    /*navigation section in the article-frame*/
+  }
+  .aboutMe-section .article-container .article-header {
+    /*hides article border*/
+    max-width: 14.5rem;
+  }
+  .aboutMe-section .article-container p {
+    font-size: 1rem;
+  }
+  .aboutMe-section .article-container .article-nav {
+    width: 65%;
+    height: 30%;
+  }
+  .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
 }
 
 #contactSection {
@@ -362,7 +511,7 @@ a:focus {
   background: none;
   border: none;
   width: 100%;
-  max-width: 58rem;
+  max-width: inherit;
   font-size: 2.5rem;
   font-weight: bold;
   color: #9615DB;
@@ -383,6 +532,195 @@ a:focus {
 #contactSection .contactForm button[type="submit"][type="submit"]:hover {
   outline: none;
   color: #B58200;
+}
+
+/*small desktop/tablet size*/
+@media only screen and (max-width: 1050px) {
+  #contactSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5rem;
+    /*container for socialmedia icones and description*/
+    /*contact form styling*/
+  }
+  #contactSection .socialmediaContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    height: 60%;
+    width: 40%;
+  }
+  #contactSection .socialmediaContainer .mediaLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    width: 100%;
+    max-width: 40rem;
+  }
+  #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item {
+    width: 2rem;
+    height: 2rem;
+  }
+  #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab {
+    font-size: 7rem;
+  }
+  #contactSection .socialmediaContainer .mediaDescription {
+    display: none;
+  }
+  #contactSection .contactForm {
+    height: 90%;
+    width: 50%;
+    /*--- !importent!---*/
+    /*textarea height styling*/
+    /*--- !importent!---*/
+    /*lable styling*/
+    /*button styling*/
+  }
+  #contactSection .contactForm input,
+  #contactSection .contactForm #Message {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  #contactSection .contactForm #Message {
+    height: 30rem;
+  }
+  #contactSection .contactForm label {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  #contactSection .contactForm button[type="submit"] {
+    font-size: 2.5rem;
+  }
+  #contactSection .contactForm button[type="submit"] .fas {
+    margin-right: 1rem;
+  }
+}
+
+/*mobile/tablet screen-size*/
+@media only screen and (max-width: 900px) {
+  #contactSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5rem;
+    /*container for socialmedia icones and description*/
+    /*contact form styling*/
+  }
+  #contactSection .socialmediaContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    height: 60%;
+    width: 40%;
+  }
+  #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab {
+    font-size: 6rem;
+  }
+  #contactSection .socialmediaContainer .mediaDescription {
+    display: none;
+  }
+  #contactSection .contactForm {
+    height: 90%;
+    width: 70%;
+    /*--- !importent!---*/
+    /*textarea height styling*/
+    /*--- !importent!---*/
+  }
+  #contactSection .contactForm input,
+  #contactSection .contactForm #Message {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  #contactSection .contactForm #Message {
+    height: 28rem;
+  }
+}
+
+/*mobile screen-size*/
+@media only screen and (max-width: 700px) {
+  #contactSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5rem;
+    /*container for socialmedia icones and description*/
+    /*contact form styling*/
+  }
+  #contactSection .socialmediaContainer .mediaDescription {
+    display: none;
+  }
+  #contactSection .contactForm {
+    height: 90%;
+    width: 70%;
+    /*--- !importent!---*/
+    /*textarea height styling*/
+    /*--- !importent!---*/
+  }
+  #contactSection .contactForm input,
+  #contactSection .contactForm #Message {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+  #contactSection .contactForm #Message {
+    height: 25rem;
+  }
 }
 
 /*footer*/

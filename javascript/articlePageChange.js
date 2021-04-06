@@ -1,4 +1,4 @@
-//this is for the about me section on the contact/about me page
+/*this is for the about me section on the contact/about me page*/
 
 //Gets the border header on the about me page
     const Header = document.getElementsByClassName('article-header')[0];

@@ -3,6 +3,8 @@
     background: $light-BackgroundColor url(../Image/AboutMe-Photo/BackgroundTextureLight.png);
     padding:1.5%;
 
+
+    /*welcome text + hero article +  hero img*/
     .hero{
         @include SectionSize(55rem);
         @include flex(column, flex-start, center);
@@ -52,8 +54,11 @@
             }
         }
 
+
+        /*button container + nav section*/
         .header-btnContainer{
             @include flex(row, space-between, flex-end);
+            position: relative;
             width: 100%;
             max-width: 63rem;
             height: 8rem;
@@ -89,9 +94,39 @@
                 }
 
             }
+
+            /*drop down meny landing page hero section*/
+            .dropDownMeny{
+                @include flex(column, space-between, flex);
+                position: absolute;
+                z-index: 5;
+                left: 50%;
+                transform: translate(-9rem, 12rem);
+                
+                width: 18rem;
+                height: 12rem; /*use this for animation/transition*/
+
+                background: white;
+
+                overflow: hidden; /*important for animation/transition*/
+
+                .projects-item{
+                    @include flex(row, center, center);
+                    list-style: none;
+                    width: inherit;
+                    height: 4rem;
+
+                    font-size: 1.4rem;
+
+                    &:hover{
+                        background: $dark-BackgroundColor;
+                        color: $light-TextColor;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
-
 }
 
 /*tablet screen-size*/

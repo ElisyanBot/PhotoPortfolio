@@ -1,3 +1,6 @@
+/*this is for the gallery section on the landing page,
+to make the links slide over the gallery images*/
+
 const gridimageThree = document.querySelector('.grid-three');
 const gridimageFive = document.querySelector('.grid-five');
 const gridimageSeven = document.querySelector('.grid-seven');
