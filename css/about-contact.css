@@ -520,7 +520,8 @@ a:focus {
   position: absolute;
   margin-right: 1rem;
   color: #C18FFF;
-  width: inherit;
+  width: 100%;
+  max-width: 35%;
   height: inherit;
 }
 
