@@ -213,7 +213,7 @@ a:focus {
   width: 18rem;
   height: 12rem;
   /*use this for animation/transition*/
-  background: white;
+  background: #ffffff;
   overflow: hidden;
   /*important for animation/transition*/
   -webkit-animation: DropDownMeny-Slider 1s ease-in-out;
@@ -238,6 +238,7 @@ a:focus {
   width: inherit;
   height: 4rem;
   font-size: 1.4rem;
+  color: #2D3032;
 }
 
 .white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item a:hover {

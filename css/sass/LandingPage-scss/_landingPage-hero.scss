@@ -107,7 +107,7 @@
                 width: 18rem;
                 height: 12rem; /*use this for animation/transition*/
 
-                background: white;
+                background: $light-BackgroundColor;
 
                 overflow: hidden; /*important for animation/transition*/
                 animation: DropDownMeny-Slider 1s ease-in-out;
@@ -121,6 +121,7 @@
                     height: 4rem;
 
                     font-size: 1.4rem;
+                    color: $dark-TextColor;
 
                     &:hover{
                         background: $dark-BackgroundColor;
