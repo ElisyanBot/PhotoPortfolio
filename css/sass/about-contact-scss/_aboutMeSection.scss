@@ -140,7 +140,7 @@
 @media only screen and (max-width: 800px){
 
     .aboutMe-section{
-        @include SectionSize(60rem);
+        @include SectionSize(80rem);
         /*about me article container*/
         .article-container{ 
     
@@ -172,7 +172,7 @@
 @media only screen and (max-width: 500px){
 
     .aboutMe-section{
-        @include SectionSize(60rem);
+        @include SectionSize(68rem);
         /*about me article container*/
         .article-container{ 
             height: 76%;

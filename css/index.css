@@ -8,7 +8,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  color: black;
 }
 
 html {
@@ -183,7 +182,7 @@ a:focus {
   color: #C18FFF;
   font-size: 1.6rem;
   letter-spacing: 0.5rem;
-  padding: 1rem 0;
+  padding: 1.8rem 2.4rem;
 }
 
 .white-outside-border .hero .header-btnContainer .hero-btn a:focus {
@@ -217,6 +216,8 @@ a:focus {
   background: white;
   overflow: hidden;
   /*important for animation/transition*/
+  -webkit-animation: DropDownMeny-Slider 1s ease-in-out;
+          animation: DropDownMeny-Slider 1s ease-in-out;
 }
 
 .white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item a {
@@ -434,6 +435,28 @@ a:focus {
   .white-outside-border .hero .header-btnContainer .hero-btn a {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+  }
+}
+
+/*animations*/
+@-webkit-keyframes DropDownMeny-Slider {
+  from {
+    height: 0rem;
+    margin-bottom: 12rem;
+  }
+  to {
+    height: 12rem;
+    margin-bottom: 0rem;
+  }
+}
+@keyframes DropDownMeny-Slider {
+  from {
+    height: 0rem;
+    margin-bottom: 12rem;
+  }
+  to {
+    height: 12rem;
+    margin-bottom: 0rem;
   }
 }
 

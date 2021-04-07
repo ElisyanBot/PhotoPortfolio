@@ -8,7 +8,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  color: black;
 }
 
 html {
@@ -249,7 +248,7 @@ a:focus {
   .aboutMe-section {
     width: 100%;
     max-width: 200rem;
-    height: 60rem;
+    height: 80rem;
     margin: auto;
     /*about me article container*/
   }
@@ -276,7 +275,7 @@ a:focus {
   .aboutMe-section {
     width: 100%;
     max-width: 200rem;
-    height: 60rem;
+    height: 68rem;
     margin: auto;
     /*about me article container*/
   }
@@ -414,7 +413,7 @@ a:focus {
 
 #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab {
   font-size: 9rem;
-  color: #9615DB;
+  color: #C18FFF;
 }
 
 #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab:hover {
@@ -512,14 +511,22 @@ a:focus {
   max-width: inherit;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #9615DB;
+  color: #C18FFF;
   text-align: start;
   padding-top: 2rem;
 }
 
 #contactSection .contactForm button[type="submit"] .fas {
+  position: absolute;
   margin-right: 1rem;
-  color: #9615DB;
+  color: #C18FFF;
+  width: inherit;
+  height: inherit;
+}
+
+#contactSection .contactForm button[type="submit"] .fas:hover {
+  outline: none;
+  color: #B58200;
 }
 
 #contactSection .contactForm button[type="submit"][type="submit"]:focus {
@@ -527,9 +534,8 @@ a:focus {
   text-decoration: underline;
 }
 
-#contactSection .contactForm button[type="submit"][type="submit"]:hover {
-  outline: none;
-  color: #B58200;
+#contactSection .contactForm button[type="submit"] span {
+  padding-left: 3rem;
 }
 
 /*small desktop/tablet size*/

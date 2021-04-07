@@ -26,7 +26,7 @@
 
                 .fab{
                     font-size: 9rem;
-                    color: $Maincolor;
+                    color: $Light-Maincolor;
         
                     &:hover{
                         color: $extra-TextColor;
@@ -115,15 +115,26 @@
 
             font-size: 2.5rem;
             font-weight: bold;
-            color: $Maincolor;
+            color: $Light-Maincolor;
 
             text-align: start;
 
             padding-top: 2rem;
 
+            
+
             .fas{
+                position: absolute;
                 margin-right: 1rem;
-                color: $Maincolor;
+                color: $Light-Maincolor;
+                width: inherit;
+                height: inherit;
+             
+
+                &:hover{
+                    outline: none;
+                    color:$extra-TextColor;
+                }
             }
 
             &[type="submit"]:focus{
@@ -131,9 +142,8 @@
                 text-decoration: underline;
             }
 
-            &[type="submit"]:hover{
-                outline: none;
-                color:$extra-TextColor;
+            span{
+                padding-left: 3rem;
             }
             
         }
