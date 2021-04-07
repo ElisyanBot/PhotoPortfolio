@@ -121,7 +121,8 @@ a:focus {
 }
 
 .aboutMe-section .article-container p {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .aboutMe-section .article-container .aboutMe-article,
@@ -230,16 +231,12 @@ a:focus {
             align-items: center;
     width: 80%;
     /*header for artical*/
-    /*changes the font in all of the articles*/
     /*navigation section in the article-frame*/
   }
   .aboutMe-section .article-container .article-header {
     font-size: 2.6rem;
     /*hides article border*/
     max-width: 25rem;
-  }
-  .aboutMe-section .article-container p {
-    font-size: 2rem;
   }
   .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
     font-size: 1.6rem;

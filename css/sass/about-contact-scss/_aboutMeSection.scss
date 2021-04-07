@@ -44,7 +44,8 @@
 
         /*changes the font in all of the articles*/
         p{
-            font-size: 2rem;        
+            font-size: 1.6rem;
+            font-weight: 500;
         }
 
         /*size of all of the articles*/
@@ -120,10 +121,6 @@
                 max-width: 25rem;
             }
     
-            /*changes the font in all of the articles*/
-            p{
-                font-size: 2rem;        
-            }
     
             /*navigation section in the article-frame*/
             .article-nav{
