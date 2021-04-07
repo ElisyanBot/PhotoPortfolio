@@ -69,7 +69,7 @@ a:focus {
 }
 
 .portfolio_area .portfolio_inner .portfolio_left .portfolio_content {
-  border: 4px solid #9615DB;
+  border: 2px solid #9615DB;
   padding: 25px;
   position: absolute;
   left: 50%;
@@ -110,9 +110,8 @@ a:focus {
 }
 
 .portfolio_area .portfolio_inner .portfolio_left .portfolio_content .content_bottom p {
-  font-size: 19px;
+  font-size: 13px;
   line-height: 18px;
-  font-style: italic;
 }
 
 .portfolio_area .portfolio_inner .portfolio_right {

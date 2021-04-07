@@ -306,7 +306,7 @@ a:focus {
 }
 
 /*mobile screen-size*/
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 470px) {
   .aboutMe-section {
     /*about me article container*/
   }
@@ -328,7 +328,7 @@ a:focus {
   }
   .aboutMe-section .article-container .article-nav .article-nav_list .article-nav_listItem a {
     font-size: 1.1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
   }
 }
 
@@ -710,6 +710,9 @@ a:focus {
   }
   #contactSection .socialmediaContainer .mediaDescription {
     display: none;
+  }
+  #contactSection .socialmediaContainer .mediaLinks .mediaLinks-item .fab {
+    font-size: 4rem;
   }
   #contactSection .contactForm {
     height: 90%;
