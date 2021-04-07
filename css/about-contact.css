@@ -744,7 +744,7 @@ footer {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 footer a {
