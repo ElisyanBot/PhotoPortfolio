@@ -27,13 +27,16 @@
                 .fab{
                     font-size: 9rem;
                     color: $Maincolor;
-
+        
                     &:hover{
                         color: $extra-TextColor;
                     }
                 }
+            
             }
         }
+
+     
 
         .mediaDescription{
             @include flex(column, space-around, center);
@@ -48,6 +51,7 @@
         }
 
     }
+
 
     /*contact form styling*/
     .contactForm{
@@ -113,26 +117,25 @@
             font-weight: bold;
             color: $Maincolor;
 
-            text-align: end;
+            text-align: start;
 
-            margin-top: 2rem;
+            padding-top: 2rem;
 
-                .fas{
-                    margin-right: 1rem;
-                    color: $Maincolor;
-                }
+            .fas{
+                margin-right: 1rem;
+                color: $Maincolor;
+            }
 
-                &[type="submit"]:focus{
-                    outline: none;
-                    text-decoration: underline;
-                }
+            &[type="submit"]:focus{
+                outline: none;
+                text-decoration: underline;
+            }
 
-                &[type="submit"]:hover{
-                    outline: none;
-                    color:$extra-TextColor;
-                }
-
-
+            &[type="submit"]:hover{
+                outline: none;
+                color:$extra-TextColor;
+            }
+            
         }
     }  
 }

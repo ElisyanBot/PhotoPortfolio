@@ -219,7 +219,7 @@ a:focus {
   /*important for animation/transition*/
 }
 
-.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item {
+.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +239,7 @@ a:focus {
   font-size: 1.4rem;
 }
 
-.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item:hover {
+.white-outside-border .hero .header-btnContainer .dropDownMeny .projects-item a:hover {
   background: #2D3032;
   color: #ffffff;
   cursor: pointer;

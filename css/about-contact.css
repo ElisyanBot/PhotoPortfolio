@@ -516,8 +516,8 @@ a:focus {
   font-size: 2.5rem;
   font-weight: bold;
   color: #9615DB;
-  text-align: end;
-  margin-top: 2rem;
+  text-align: start;
+  padding-top: 2rem;
 }
 
 #contactSection .contactForm button[type="submit"] .fas {

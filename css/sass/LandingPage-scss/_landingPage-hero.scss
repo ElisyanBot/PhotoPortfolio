@@ -111,7 +111,7 @@
 
                 overflow: hidden; /*important for animation/transition*/
 
-                .projects-item{
+                .projects-item a{
                     @include flex(row, center, center);
                     list-style: none;
                     width: inherit;
